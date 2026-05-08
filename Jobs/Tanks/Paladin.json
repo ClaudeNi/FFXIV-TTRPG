@@ -1,0 +1,185 @@
+{
+  "MainStats": {
+    "Lvl30": [4, 0, 5, 1, 2],
+    "Lvl40": [4, 0, 5, 1, 2],
+    "Lvl50": [5, 1, 6, 2, 3],
+    "Lvl55": [5, 1, 6, 2, 3],
+    "Lvl60": [6, 1, 6, 2, 4]
+  },
+  "SubStats": {
+    "Lvl30": [16, 13, 12, 5, 35],
+    "Lvl40": [16, 13, 12, 5, 46],
+    "Lvl50": [17, 14, 13, 5, 63],
+    "Lvl55": [17, 14, 13, 5, 69],
+    "Lvl60": [17, 15, 14, 5, 76]
+  },
+  "Traits": {
+    "Lvl30": [
+      {
+        "Name": "Combo",
+        "Sub": "Trait",
+        "Desc": "After resolving the effects of an ability with Combo, you may use one of the specified abilities at any point during your turn. You may move before doing so, and may choose a new target when using this additional ability."
+      }
+    ],
+    "Lvl40": [
+      {
+        "Name": "Oath Mastery",
+        "Sub": "Trait, Job Resource",
+        "Desc": "Certain effects grant you Conviction.You can have up to 4 Conviction atany given time. At the start of your turn, gain 1 Conviction.",
+        "charges": 4
+      }
+    ],
+    "Lvl60": [
+      {
+        "Name": "Enhanced Enmity",
+        "Sub": "Trait",
+        "Desc": "Enemies that you have Enmity on incur a -8 penalty on all ability checksthat do not target you."
+      }
+    ]
+  },
+  "PrimaryAbilities": {
+    "Lvl30": [
+      {
+        "Name": "Paladin Combo (Fast Blade + Riot Blade)",
+        "Sub": "Primary, Physical",
+        "Target": "Single",
+        "Range": "1 Square",
+        "Check": "STR (d20 + 4)",
+        "CR": "Target's Defense",
+        "BaseEffect": "Deals 2 damage and inflicts Enmity on the target. Combo:Rage of Halone",
+        "DirectHit": "Deals an additional 1d6 damage",
+        "HasCombo": true,
+        "ComboAbilities": [
+          {
+            "Name": "Rage of Halone",
+            "Sub": "Primary, Physical",
+            "Target": "Single",
+            "Range": "1 Square",
+            "Check": "STR (d20 + 4)",
+            "CR": "Target's Defense",
+            "BaseEffect": "Deals 2 damage and inflicts Enmity on the target.",
+            "DirectHit": "Direct Hit: Deals an additional 1d6 damage"
+          }
+        ]
+      },
+      {
+        "Name": "Total Eclipse",
+        "Sub": "Primary, Physical",
+        "Target": "All enemies within range",
+        "Range": "A 5x5 area centered on this character",
+        "Check": "STR (d20 + 4)",
+        "CR": "Target's Defense",
+        "BaseEffect": "Deals 2 damage and inflicts Enmity on the target.",
+        "DirectHit": "Deals 2 damage to all targets."
+      },
+      {
+        "Name": "Shield Bash",
+        "Sub": "Primary, Physical",
+        "Target": "Single",
+        "Range": "1 Square",
+        "Check": "STR (d20 + 4)",
+        "CR": "Target's Defense",
+        "BaseEffect": "Deals 3 damage, inflicts Enmity, and Stuns the target until the end of this turn.",
+        "DirectHit": "Deals an additional 1d6 damage."
+      },
+      {
+        "Name": "Shield Lob",
+        "Sub": "Primary, Physical",
+        "Target": "Single",
+        "Range": "5 Squares",
+        "Check": "STR (d20 + 4)",
+        "CR": "Target's Defense",
+        "BaseEffect": "Deals 2 damage and inflicts Enmity on the target.",
+        "DirectHit": "Deals an additional 1d6 damage."
+      }
+    ],
+    "Lvl40": [],
+    "Lvl50": [],
+    "Lvl55": [],
+    "Lvl60": []
+  },
+  "SecondaryAbilities": {
+    "Lvl30": [
+      {
+        "Name": "Rampart",
+        "Sub": "Secondary",
+        "charges": 1,
+        "BaseEffect": "Reduce the damage you take from abilties by 2 until the start of your next turn.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Name": "Low Blow",
+        "Sub": "Secondary, Physical",
+        "Target": "Single",
+        "Range": "1 Square",
+        "BaseEffect": "Stuns the target until the end of this turn."
+      },
+      {
+        "Name": "Spirits Within",
+        "Sub": "Secondary, Physical",
+        "charges": 2,
+        "Target": "Single",
+        "Range": "1 Square",
+        "BaseEffect": "Deals 2 damage and inflicts Enmity on the target.",
+        "Limitation": "Twice per phase"
+      }
+    ],
+    "Lvl40": [],
+    "Lvl50": [],
+    "Lvl55": [],
+    "Lvl60": []
+  },
+  "InstantAbilities": {
+    "Lvl30": [
+      {
+        "Name": "Sturdy Shield",
+        "Sub": "Instant",
+        "Trigger": "Immediately after an ability check for an ability that targets you",
+        "BaseEffect": "Increase your Defense by 1d6 for the ability check that triggered Sturdy Shield. Use this new value to determine if the ability scores a direct hit.",
+        "Limitation": "Once per round"
+      },
+      {
+        "Name": "Fight or Flight",
+        "Sub": "Instant",
+        "Charges": 1,
+        "Trigger": "Any time during your turn",
+        "BaseEffect": "Grants one advantage die on your next ability check this turn.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Name": "Provoke",
+        "Sub": "Instant",
+        "Charges": 1,
+        "Trigger": "When an enemy begins their turn",
+        "Target": "The enemy that triggered this ability",
+        "Range": "10 Squares",
+        "BaseEffect": "Inflicts Enmity on the target.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Name": "Interject",
+        "Sub": "Instant",
+        "Charges": 1,
+        "Trigger": "When an adjacent enemy uses an invoked ability, or is using an invoked ability to generate a marker",
+        "Target": "The enemy that triggered this ability",
+        "Range": "1 Square",
+        "BaseEffect": "Interrupts the invoked ability that triggered Interject, negating it completely.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Name": "Reprisal",
+        "Sub": "Instant",
+        "Charges": 1,
+        "Trigger": "Immediately before an ability used by an enemy within 2 squares is resolved",
+        "Target": "All enemies within range",
+        "Range": "A 5x5 area centered on this character",
+        "BaseEffect": "Reduces the damage dealt by the abilities of all targets by 2 until the end of this round.",
+        "Limitation": "Once per phase"
+      }
+    ],
+    "Lvl40": [],
+    "Lvl50": [],
+    "Lvl55": [],
+    "Lvl60": []
+  }
+}
