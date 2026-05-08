@@ -1,0 +1,165 @@
+{
+  "MainStats": {
+    "Lvl30": [4, 0, 4, 0, 4],
+    "Lvl40": [4, 0, 4, 0, 4],
+    "Lvl50": [5, 1, 5, 1, 5],
+    "Lvl55": [5, 1, 5, 1, 5],
+    "Lvl60": [6, 1, 5, 1, 6]
+  },
+  "SubStats": {
+    "Lvl30": [15, 14, 14, 5, 32],
+    "Lvl40": [15, 14, 14, 5, 42],
+    "Lvl50": [16, 15, 15, 5, 58],
+    "Lvl55": [16, 15, 15, 5, 63],
+    "Lvl60": [17, 15, 16, 5, 70]
+  },
+  "Traits": {
+    "Lvl30": [
+      {
+        "Name": "Darkside",
+        "Sub": "Enhancement",
+        "Desc": "While under the effect of Darkside, you may spend 2 MP when you score a direct hit on an enemy with a single-target ability to treat any roll of 1, 2, or 3 as if it were a 0 and any roll of 4, 5, or 6 as if it were a 10 when determining damage. Darkside is removed at the end of your next turn if the effect is not renewed.",
+        "Charges": 1
+      },
+      {
+        "Name": "Combo",
+        "Sub": "Trait",
+        "Desc": "After resolving the effects of an ability with Combo, you may use one of the specified abilities at any point during your turn. You may move before doing so, and may choose a new target when using this additional ability."
+      }
+    ],
+    "Lvl50": [
+      {
+        "Name": "Walking Dead",
+        "Sub": "Enhancement",
+        "Desc": "While under the effect of Walking Dead, your abilities restore 2d6 + 6 HP for each enemy they damage when they score a direct hit. Walking Dead is removed when your HP equals your Max HP. At the end of your turn, if Walking Dead has not been removed, your HP is reduced to 0, and you are Knocked Out.\nAfter attaining level 60, the amount of HP your abilities restore increases to 2d6 + 8 HP.",
+        "Charges": 1
+      }
+    ],
+    "Lvl60": [
+      {
+        "Name": "Enhanced Enmity",
+        "Sub": "Trait",
+        "Desc": "Enemies that you have Enmity on incur a -8 penalty on all ability checksthat do not target you."
+      }
+    ]
+  },
+  "PrimaryAbilities": {
+    "Lvl30": [
+      {
+        "Name": "Dark Knight Combo (Hard Slash + Syphon Strike)",
+        "Sub": "Primary, Physical",
+        "Target": "Single",
+        "Range": "1 Square",
+        "Check": "STR (d20 + 4)",
+        "CR": "Target's Defense",
+        "BaseEffect": "Deals 2 damage and inflicts Enmity on the target. Restores 1 MP. Combo: Souleater",
+        "DirectHit": "Deals an additional 1d6 damage",
+        "HasCombo": true,
+        "ComboAbilities": [
+          {
+            "Name": "Souleater",
+            "Sub": "Primary, Physical",
+            "Target": "Single",
+            "Range": "1 Square",
+            "Check": "STR (d20 + 4)",
+            "CR": "Target's Defense",
+            "BaseEffect": "Deals 2 damage and inflicts Enmity on the target. Restores 2 HP.",
+            "DirectHit": "Direct Hit: Deals an additional 1d6 damage"
+          }
+        ]
+      },
+      {
+        "Name": "Unleash",
+        "Sub": "Primary, Magic",
+        "Target": "All enemies within range",
+        "Range": "A 5x5 area centered on this character",
+        "Check": "MND (d20 + 4)",
+        "CR": "Target's Magic Defense",
+        "BaseEffect": "Inflicts Enmity on all targets.",
+        "DirectHit": "Deals 2 damage to all targets."
+      },
+      {
+        "Name": "Unmend",
+        "Sub": "Primary, Magic",
+        "Target": "Single",
+        "Range": "5 Squares",
+        "Check": "MND (d20 + 4)",
+        "CR": "Target's Magic Defense",
+        "BaseEffect": "Deals 3 damage and inflicts Enmity on the target.",
+        "DirectHit": "Deals an additional 1d6 damage."
+      }
+    ],
+    "Lvl40": [],
+    "Lvl50": [],
+    "Lvl55": [],
+    "Lvl60": []
+  },
+  "SecondaryAbilities": {
+    "Lvl30": [
+      {
+        "Name": "Rampart",
+        "Sub": "Secondary",
+        "charges": 1,
+        "BaseEffect": "Reduce the damage you take from abilties by 2 until the start of your next turn.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Name": "Low Blow",
+        "Sub": "Secondary, Physical",
+        "Target": "Single",
+        "Range": "1 Square",
+        "BaseEffect": "Stuns the target until the end of this turn."
+      },
+      {
+        "Name": "Flood of Darkness",
+        "Sub": "Secondary, Magic",
+        "Cost": "2 MP",
+        "Target": "All enemies within range",
+        "Range": "A 3x3 area adjacent to this character",
+        "BaseEffect": "Deals 2 damage to all targets and grants Darkside."
+      }
+    ],
+    "Lvl40": [],
+    "Lvl50": [],
+    "Lvl55": [],
+    "Lvl60": []
+  },
+  "InstantAbilities": {
+    "Lvl30": [
+      {
+        "Name": "Provoke",
+        "Sub": "Instant",
+        "Charges": 1,
+        "Trigger": "When an enemy begins their turn",
+        "Target": "The enemy that triggered this ability",
+        "Range": "10 Squares",
+        "BaseEffect": "Inflicts Enmity on the target.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Name": "Interject",
+        "Sub": "Instant",
+        "Charges": 1,
+        "Trigger": "When an adjacent enemy uses an invoked ability, or is using an invoked ability to generate a marker",
+        "Target": "The enemy that triggered this ability",
+        "Range": "1 Square",
+        "BaseEffect": "Interrupts the invoked ability that triggered Interject, negating it completely.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Name": "Reprisal",
+        "Sub": "Instant",
+        "Charges": 1,
+        "Trigger": "Immediately before an ability used by an enemy within 2 squares is resolved",
+        "Target": "All enemies within range",
+        "Range": "A 5x5 area centered on this character",
+        "BaseEffect": "Reduces the damage dealt by the abilities of all targets by 2 until the end of this round.",
+        "Limitation": "Once per phase"
+      }
+    ],
+    "Lvl40": [],
+    "Lvl50": [],
+    "Lvl55": [],
+    "Lvl60": []
+  }
+}
