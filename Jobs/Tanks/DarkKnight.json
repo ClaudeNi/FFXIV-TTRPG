@@ -43,6 +43,48 @@
       }
     ]
   },
+  "LimitBreak": {
+    "Lvl30": {
+      "Image": "",
+      "Name": "Dark Force",
+      "Sub": "Limit Break",
+      "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
+      "Target": "Single",
+      "BaseEffect": "Prevents all damage and enfeeblements that the triggered Dark Force inflicts on the target."
+    },
+    "Lvl40": {
+      "Image": "",
+      "Name": "Dark Force",
+      "Sub": "Limit Break",
+      "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
+      "Target": "Single",
+      "BaseEffect": "Prevents all damage and enfeeblements that the triggered Dark Force inflicts on the target."
+    },
+    "Lvl50": {
+      "Image": "",
+      "Name": "Dark Force",
+      "Sub": "Limit Break",
+      "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
+      "Target": "Single",
+      "BaseEffect": "Prevents all damage and enfeeblements that the triggered Dark Force inflicts on the target."
+    },
+    "Lvl55": {
+      "Image": "",
+      "Name": "Dark Force",
+      "Sub": "Limit Break",
+      "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
+      "Target": "Single",
+      "BaseEffect": "Prevents all damage and enfeeblements that the triggered Dark Force inflicts on the target."
+    },
+    "Lvl60": {
+      "Image": "",
+      "Name": "Dark Force",
+      "Sub": "Limit Break",
+      "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
+      "Target": "Single",
+      "BaseEffect": "Prevents all damage and enfeeblements that the triggered Dark Force inflicts on the target."
+    }
+  },
   "PrimaryAbilities": {
     "Lvl30": [
       {
