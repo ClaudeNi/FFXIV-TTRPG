@@ -1,5 +1,5 @@
 {
-  "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/DarkKnight-Icon.png",
+  "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DarkKnight-Icon.png",
   "MainStats": {
     "Lvl30": [4, 0, 4, 0, 4],
     "Lvl40": [4, 0, 4, 0, 4],
@@ -46,7 +46,7 @@
   },
   "LimitBreak": {
     "Lvl30": {
-      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/LimitBreak-Icon.png",
       "Name": "Dark Force",
       "Sub": "Limit Break",
       "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
@@ -54,7 +54,7 @@
       "BaseEffect": "Prevents all damage and enfeeblements that the triggered Dark Force inflicts on the target."
     },
     "Lvl40": {
-      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/LimitBreak-Icon.png",
       "Name": "Dark Force",
       "Sub": "Limit Break",
       "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
@@ -62,7 +62,7 @@
       "BaseEffect": "Prevents all damage and enfeeblements that the triggered Dark Force inflicts on the target."
     },
     "Lvl50": {
-      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/LimitBreak-Icon.png",
       "Name": "Dark Force",
       "Sub": "Limit Break",
       "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
@@ -70,7 +70,7 @@
       "BaseEffect": "Prevents all damage and enfeeblements that the triggered Dark Force inflicts on the target."
     },
     "Lvl55": {
-      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/LimitBreak-Icon.png",
       "Name": "Dark Force",
       "Sub": "Limit Break",
       "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
@@ -78,7 +78,7 @@
       "BaseEffect": "Prevents all damage and enfeeblements that the triggered Dark Force inflicts on the target."
     },
     "Lvl60": {
-      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/LimitBreak-Icon.png",
       "Name": "Dark Force",
       "Sub": "Limit Break",
       "Trigger": "Immediately before an effect that deals damage or inflicts enfeeblements is resolved",
@@ -89,7 +89,7 @@
   "PrimaryAbilities": {
     "Lvl30": [
       {
-        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/DarkKnight-Combo.png",
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DarkKnight-Combo.png",
         "Name": "Dark Knight Combo (Hard Slash + Syphon Strike)",
         "Sub": "Primary, Physical",
         "Target": "Single",
@@ -101,6 +101,7 @@
         "HasCombo": true,
         "ComboAbilities": [
           {
+            "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DarkKnight-Souleater.png",
             "Name": "Souleater",
             "Sub": "Primary, Physical",
             "Target": "Single",
@@ -113,7 +114,7 @@
         ]
       },
       {
-        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/DarkKnight-Unleash.png",
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DarkKnight-Unleash.png",
         "Name": "Unleash",
         "Sub": "Primary, Magic",
         "Target": "All enemies within range",
@@ -124,7 +125,7 @@
         "DirectHit": "Deals 2 damage to all targets."
       },
       {
-        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/DarkKnight-Unmend.png",
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DarkKnight-Unmend.png",
         "Name": "Unmend",
         "Sub": "Primary, Magic",
         "Target": "Single",
@@ -143,7 +144,7 @@
   "SecondaryAbilities": {
     "Lvl30": [
       {
-        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/Tank-Rampart.png",
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Tank-Rampart.png",
         "Name": "Rampart",
         "Sub": "Secondary",
         "charges": 1,
@@ -151,7 +152,7 @@
         "Limitation": "Once per phase"
       },
       {
-        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/Tank-LowBlow.png",
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Tank-LowBlow.png",
         "Name": "Low Blow",
         "Sub": "Secondary, Physical",
         "Target": "Single",
@@ -159,7 +160,7 @@
         "BaseEffect": "Stuns the target until the end of this turn."
       },
       {
-        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/DarkKnight-FloodOfDarkness.png",
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DarkKnight-FloodOfDarkness.png",
         "Name": "Flood of Darkness",
         "Sub": "Secondary, Magic",
         "Cost": "2 MP",
@@ -176,7 +177,7 @@
   "InstantAbilities": {
     "Lvl30": [
       {
-        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/Tank-Provoke.png",
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Tank-Provoke.png",
         "Name": "Provoke",
         "Sub": "Instant",
         "Charges": 1,
@@ -187,7 +188,7 @@
         "Limitation": "Once per phase"
       },
       {
-        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/Tank-Interject.png",
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Tank-Interject.png",
         "Name": "Interject",
         "Sub": "Instant",
         "Charges": 1,
@@ -198,7 +199,7 @@
         "Limitation": "Once per phase"
       },
       {
-        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/Tank-Reprisal.png",
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Tank-Reprisal.png",
         "Name": "Reprisal",
         "Sub": "Instant",
         "Charges": 1,
