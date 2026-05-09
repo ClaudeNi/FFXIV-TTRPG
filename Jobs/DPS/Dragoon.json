@@ -1,1 +1,233 @@
-{}
+{
+  "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Dragoon-Icon.png",
+  "MainStats": {
+    "Lvl30": [5, 3, 2, 1, 1],
+    "Lvl40": [5, 3, 2, 1, 1],
+    "Lvl50": [6, 4, 3, 2, 2],
+    "Lvl55": [6, 4, 3, 2, 2],
+    "Lvl60": [7, 4, 4, 2, 2]
+  },
+  "SubStats": {
+    "Lvl30": [14, 11, 11, 5, 26],
+    "Lvl40": [14, 11, 11, 5, 34],
+    "Lvl50": [15, 12, 12, 5, 48],
+    "Lvl55": [15, 12, 12, 5, 53],
+    "Lvl60": [16, 12, 12, 5, 64]
+  },
+  "Traits": {
+    "Lvl30": [
+      {
+        "Name": "Power Surge",
+        "Sub": "Enhancement",
+        "Desc": "While under the effect of Power Surge, your abilities deal an additional 2 damage.\nAfter attaining level 50, this damage increases to 3, and to 4 at level 60.",
+        "Charges": 1
+      },
+      {
+        "Name": "Combo",
+        "Sub": "Trait",
+        "Desc": "After resolving the effects of an ability with Combo, you may use one of the specified abilities at any point during your turn. You may move before doing so, and may choose a new target when using this additional ability."
+      }
+    ],
+    "Lvl55": [
+      {
+        "Name": "Battle Litany",
+        "Sub": "Enhancement",
+        "Desc": "While a character is under the effect of Battle Litany, they may increase the value of the die landed on by 1 when making an ability check and use this new value to determine if the ability triggers a proc effect or scores a direct hit or critical. Battle Litany is removed when its effect is resolved.",
+        "Charges": 1
+      }
+    ],
+    "Lvl60": [
+      {
+        "Name": "Blood of the Dragon",
+        "Sub": "Enhancement",
+        "Desc": "While under the effect of Blood of the Dragon, you may deal 3 damage to all adjacent enemies when you move into a square. An enemy can only suffer damage from this effect once per turn.",
+        "Charges": 1
+      }
+    ]
+  },
+  "LimitBreak": {
+    "Lvl30": {
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Name": "Dragonsong Dive",
+      "Sub": "Limit Break, Physical",
+      "Trigger": "Any time",
+      "Target": "Single",
+      "Range": "5 Squares",
+      "BaseEffect": "Deals 6d6 damage to the target, then move to an empty square adjacent to the target if one is available."
+    },
+    "Lvl40": {
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Name": "Dragonsong Dive",
+      "Sub": "Limit Break, Physical",
+      "Trigger": "Any time",
+      "Target": "Single",
+      "Range": "5 Squares",
+      "BaseEffect": "Deals 8d6 damage to the target, then move to an empty square adjacent to the target if one is available."
+    },
+    "Lvl50": {
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Name": "Dragonsong Dive",
+      "Sub": "Limit Break, Physical",
+      "Trigger": "Any time",
+      "Target": "Single",
+      "Range": "5 Squares",
+      "BaseEffect": "Deals 10d6 damage to the target, then move to an empty square adjacent to the target if one is available."
+    },
+    "Lvl55": {
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Name": "Dragonsong Dive",
+      "Sub": "Limit Break, Physical",
+      "Trigger": "Any time",
+      "Target": "Single",
+      "Range": "5 Squares",
+      "BaseEffect": "Deals 10d6 + 3 damage to the target, then move to an empty square adjacent to the target if one is available."
+    },
+    "Lvl60": {
+      "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG/refs/heads/main/Images/LimitBreak-Icon.png",
+      "Name": "Dragonsong Dive",
+      "Sub": "Limit Break, Physical",
+      "Trigger": "Any time",
+      "Target": "Single",
+      "Range": "5 Squares",
+      "BaseEffect": "Deals 10d6 + 10 damage to the target, then move to an empty square adjacent to the target if one is available."
+    }
+  },
+  "PrimaryAbilities": {
+    "Lvl30": [
+      {
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Dragoon-TrueThrust.png",
+        "Name": "True Thrust",
+        "Sub": "Primary, Physical",
+        "Target": "Single",
+        "Range": "1 Square",
+        "Check": "STR (d20 + 5)",
+        "CR": "Target's Defense",
+        "BaseEffect": "Deals 3 damage to the target. Combo: Dragoon Combo or Disembowel",
+        "DirectHit": "Deals an additional 2d6 damage.",
+        "HasCombo": true,
+        "ComboAbilities": [
+          {
+            "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Dragoon-Combo.png",
+            "Name": "Dragoon Combo (Vorpal Thrust + Full Thrust)",
+            "Sub": "Primary, Physical",
+            "Target": "Single",
+            "Range": "1 Square",
+            "Check": "STR (d20 + 5)",
+            "CR": "Target's Defense",
+            "BaseEffect": "Deals 3 damage to the target.",
+            "DirectHit": "Deals an additional 2d6 damage."
+          },
+          {
+            "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Dragoon-Disembowel.png",
+            "Name": "Disembowel",
+            "Sub": "Primary, Physical",
+            "Target": "Single",
+            "Range": "1 Square",
+            "Check": "STR (d20 + 5)",
+            "CR": "Target's Defense",
+            "BaseEffect": "Deals 3 damage to the target and grants Power Surge.",
+            "DirectHit": "Deals an additional 1d6 damage."
+          }
+        ]
+      },
+      {
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Dragoon-PiercingTalon.png",
+        "Name": "Piercing Talon",
+        "Sub": "Primary, Physical",
+        "Target": "Single",
+        "Range": "5 Squares",
+        "Check": "STR (d20 + 5)",
+        "CR": "Target's Defense",
+        "BaseEffect": "Deals 3 damage to the target.",
+        "DirectHit": "Deals an additional 2d6 damage."
+      },
+      {
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Dragoon-Jump.png",
+        "Name": "Jump",
+        "Sub": "Primary, Physical",
+        "Charges": 1,
+        "Target": "Single",
+        "Range": "5 Squares",
+        "Check": "STR (d20 + 5)",
+        "CR": "Target's Defense",
+        "BaseEffect": "Deals 2d6 + 3 damage to the target.",
+        "DirectHit": "Deals an additional 2d6 damage.",
+        "Limitation": "Once per phase"
+      }
+    ],
+    "Lvl40": [],
+    "Lvl50": [],
+    "Lvl55": [],
+    "Lvl60": []
+  },
+  "SecondaryAbilities": {
+    "Lvl30": [
+      {
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Dragoon-LifeSurge.png",
+        "Name": "Life Surge",
+        "Sub": "Secondary",
+        "Charges": 1,
+        "BaseEffect": "Grants Drain (2) until the end of this turn and one advantage die on your next ability check this turn.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DPS-LegSweep.png",
+        "Name": "Leg Sweep",
+        "Sub": "Secondary, Physical",
+        "Charges": 1,
+        "Target": "Single",
+        "Range": "1 Square",
+        "BaseEffect": "Stuns the target until the end of this turn.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DPS-Bloodbath.png",
+        "Name": "Bloodbath",
+        "Sub": "Secondary",
+        "Charges": 1,
+        "BaseEffect": "Grants Drain (2) until the end of this turn.",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/Dragoon-LanceCharge.png",
+        "Name": "Lance Charge",
+        "Sub": "Secondary",
+        "Charges": 2,
+        "BaseEffect": "Your abilities deal an additional 2 damage until the end of this turn.",
+        "Limitation": "Twice per phase"
+      }
+    ],
+    "Lvl40": [],
+    "Lvl50": [],
+    "Lvl55": [],
+    "Lvl60": []
+  },
+  "InstantAbilities": {
+    "Lvl30": [
+      {
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DPS-SecondWind.png",
+        "Name": "Second Wind",
+        "Sub": "Instant",
+        "Charges": 1,
+        "Trigger": "When any character ends their turn",
+        "BaseEffect": "Restores 1d6 + 2 HP",
+        "Limitation": "Once per phase"
+      },
+      {
+        "Image": "https://raw.githubusercontent.com/ClaudeNi/FFXIV-TTRPG-API/refs/heads/main/Images/DPS-Feint.png",
+        "Name": "Feint",
+        "Sub": "Instant, Pysical",
+        "Charges": 1,
+        "Trigger": "Immediately before an ablilty used by an enemy is resolved",
+        "Target": "The enemy that triggered this ability",
+        "Range": "2 Square",
+        "BaseEffect": "Reduces thee damage dealt by the target's abilties by 2 until the end of this turn.",
+        "Limitation": "Once per phase"
+      }
+    ],
+    "Lvl40": [],
+    "Lvl50": [],
+    "Lvl55": [],
+    "Lvl60": []
+  }
+}
